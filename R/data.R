@@ -7,6 +7,8 @@
 #'   \item{SongId}{Song id number}
 #'   \item{Song}{Song name}
 #'   \item{Lyrics}{A vector with line by line lyrics for the song}
+#'   \item{Stems}{A vector of unique stems found in the song}
+#'   \item{StemsByLine}{A list of vectors of stems, one per line of the song}
 #'   }
 #' @source \url{http://www.bobdylan.com/}
 "bd_songs"
