@@ -15,7 +15,6 @@
 #' @family lyric_functions
 #' @return a vector of unique stems found in sentence
 
-library(tidytext)
 
 get_word_stems <- function(sentence) {
   if (class(sentence) == "list") sentence <- sentence %>% unlist() %>% paste(collapse = " ")
