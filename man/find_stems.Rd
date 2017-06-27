@@ -11,5 +11,6 @@ Find which stems in a given source text can be found in a given target text
 }
 \seealso{
 Other lyric_functions: \code{\link{find_bd_lyrics}},
-  \code{\link{find_line_matches}}
+  \code{\link{find_line_matches}},
+  \code{\link{get_word_stems}}
 }

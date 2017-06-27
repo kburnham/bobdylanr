@@ -21,5 +21,5 @@ Given a lyric snippet and a song name, return vector of matches by line
 }
 \seealso{
 Other lyric_functions: \code{\link{find_bd_lyrics}},
-  \code{\link{find_stems}}
+  \code{\link{find_stems}}, \code{\link{get_word_stems}}
 }
