@@ -11,7 +11,7 @@
 #' as matches have the background color set to 'FFFF00'
 
 highlight_matches <- function(song_name, match_results) {
-  song <- bd_songs %>% filter(Song == song_name) %>% pull(lyrics) %>% unlist(recursive = FALSE)
+  song <- bd_songs %>% filter(Song == song_name) %>% pull(Lyrics) %>% unlist(recursive = FALSE)
   rows_to_highlight <- which(match_results > 0)
   rows <- map_at(song, rows_to_highlight, function(x)
     paste("<span stlye = 'background-color: #FFFF00'>", x, "</span>"))
