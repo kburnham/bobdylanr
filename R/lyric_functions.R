@@ -69,9 +69,9 @@ find_stems <- function(stems_to_search, stems_to_search_in) {
 
 find_bd_lyrics <- function(lyrics) {
   search <- get_word_stems(lyrics)
-  bd_songs$result <- unlist(map(bd_songs$Stems,
+  bd_songs$Hits <- unlist(map(bd_songs$Stems,
                                 function(x) length(find_stems(get_word_stems(lyrics), x))))
-  bd_songs %>% filter(result > 0) %>% arrange(desc(result)) %>% select(SongId, Song, Lyrics)
+  bd_songs %>% filter(Hits > 0) %>% arrange(desc(Hits)) %>% select(Song, Hits)
 }
 
 
