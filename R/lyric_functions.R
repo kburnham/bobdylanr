@@ -33,10 +33,12 @@ get_word_stems <- function(sentence) {
   # clean up
   words <- words[words != ""]
 
-  words <- words[!words %in% (tidytext::stop_words %>% filter(lexicon == "snowball") %>% pull(word))]
+  words <- words[!words %in% (tidytext::stop_words %>% dplyr::filter(lexicon == "snowball") %>% pull(word))]
   stems <- wordStem(words) %>% unique()
   return(stems)
 }
+
+stop_words %>% dplyr::filter(lexicon == "snowball")
 
 ## there is a lot of other text processing that needs to occur
 # - remove punctuation , . ? \" ! ”’ “ ‘ some words (esp names) seem to end with '
