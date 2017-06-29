@@ -4,7 +4,7 @@
 \alias{find_stems}
 \title{Find which stems in a given source text can be found in a given target text}
 \usage{
-find_stems(stems_to_search, stems_to_search_in)
+find_stems(stems_to_search)
 }
 \description{
 Find which stems in a given source text can be found in a given target text
@@ -12,5 +12,7 @@ Find which stems in a given source text can be found in a given target text
 \seealso{
 Other lyric_functions: \code{\link{find_bd_lyrics}},
   \code{\link{find_line_matches}},
-  \code{\link{get_word_stems}}
+  \code{\link{get_stem_match}},
+  \code{\link{get_word_stems}},
+  \code{\link{match_all_stems}}
 }

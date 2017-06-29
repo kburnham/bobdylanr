@@ -17,5 +17,7 @@ Search for Bob Dylan Songs containing a given lyrical snippet
 }
 \seealso{
 Other lyric_functions: \code{\link{find_line_matches}},
-  \code{\link{find_stems}}, \code{\link{get_word_stems}}
+  \code{\link{find_stems}}, \code{\link{get_stem_match}},
+  \code{\link{get_word_stems}},
+  \code{\link{match_all_stems}}
 }
